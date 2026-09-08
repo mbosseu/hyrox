@@ -178,10 +178,10 @@ export function HomePage() {
             </a>
           </div>
           <Image
-            src="/images/materiel.webp"
-            alt="Séance d'entraînement au Boxing Center Toulouse"
-            width={800}
-            height={554}
+            src="/images/boxing-center.webp"
+            alt="Athlètes du Boxing Center en séance d'entraînement"
+            width={1400}
+            height={969}
             className="h-56 w-full object-cover object-center sm:h-72"
             sizes="(max-width: 768px) 100vw, 50vw"
           />
