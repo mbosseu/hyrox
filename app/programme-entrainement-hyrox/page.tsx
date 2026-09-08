@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
 import { CtaBanner } from "@/components/CtaBanner";
 import { PageHero } from "@/components/PageHero";
+import { pageSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageSeo({
   title: "Programme d'entraînement HYROX",
   description:
     "Exemple de programme HYROX sur une semaine : course, force, séance hybride et récupération.",
-  alternates: { canonical: "/programme-entrainement-hyrox" },
-};
+  path: "/programme-entrainement-hyrox",
+  image: "/images/gym-class.webp",
+});
 
 const days = [
   { day: "Lundi", title: "Course facile", text: "30 à 45 min allure conversation. Technique de foulée, relâchement." },
@@ -26,7 +28,7 @@ export default function Page() {
         kicker="Plan"
         title="Programme d'entraînement"
         text="Un canevas débutant / intermédiaire. Adaptez les charges et le volume. Ce n'est pas un plan d'élite."
-        image="/images/gym-class.jpg"
+        image="/images/gym-class.webp"
         alt="Salle de sport, cadre d'entraînement régulier"
       />
       <section className="container-page space-y-4 py-14">

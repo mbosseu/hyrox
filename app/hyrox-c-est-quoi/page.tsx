@@ -2,13 +2,15 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { CtaBanner } from "@/components/CtaBanner";
 import { PageHero } from "@/components/PageHero";
+import { pageSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageSeo({
   title: "Qu'est-ce que le HYROX ?",
   description:
     "Le HYROX expliqué simplement : format de course, public, différences avec le CrossFit, et pourquoi ça se prépare.",
-  alternates: { canonical: "/hyrox-c-est-quoi" },
-};
+  path: "/hyrox-c-est-quoi",
+  image: "/images/race.webp",
+});
 
 export default function Page() {
   return (
@@ -17,7 +19,7 @@ export default function Page() {
         kicker="La discipline"
         title="Qu'est-ce que le HYROX ?"
         text="Une course indoor qui mélange 8 km de running et 8 stations de force fonctionnelle. Un format unique, comparable, et ouvert à tous les niveaux."
-        image="/images/race.jpg"
+        image="/images/race.webp"
         alt="Esprit course et communauté sportive"
       />
       <article className="container-page max-w-3xl space-y-5 py-14 text-neutral-800">

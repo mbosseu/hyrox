@@ -2,13 +2,15 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { CtaBanner } from "@/components/CtaBanner";
 import { PageHero } from "@/components/PageHero";
+import { pageSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageSeo({
   title: "HYROX débutant",
   description:
     "HYROX débutant : niveau nécessaire, première séance, endurance, force, récupération et erreurs à éviter.",
-  alternates: { canonical: "/hyrox-debutant" },
-};
+  path: "/hyrox-debutant",
+  image: "/images/coach.webp",
+});
 
 export default function Page() {
   return (
@@ -17,7 +19,7 @@ export default function Page() {
         kicker="Commencer"
         title="HYROX débutant"
         text="Vous n'avez pas besoin d'être déjà « prêt pour une course ». Vous avez besoin d'un cadre, d'une technique propre et d'un rythme que vous pouvez tenir."
-        image="/images/coach.jpg"
+        image="/images/coach.webp"
         alt="Encadrement d'une séance pour débuter le HYROX"
       />
       <article className="container-page max-w-3xl space-y-5 py-14 text-neutral-800">

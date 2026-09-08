@@ -2,13 +2,15 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { CtaBanner } from "@/components/CtaBanner";
 import { PageHero } from "@/components/PageHero";
+import { pageSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageSeo({
   title: "Entraînement HYROX",
   description:
     "Entraînement HYROX : course, force, cardio, exercices fonctionnels, mobilité et récupération.",
-  alternates: { canonical: "/entrainement-hyrox" },
-};
+  path: "/entrainement-hyrox",
+  image: "/images/strength.webp",
+});
 
 export default function Page() {
   return (
@@ -17,7 +19,7 @@ export default function Page() {
         kicker="Méthode"
         title="Entraînement HYROX"
         text="Un bon plan HYROX n'est pas que du fractionné. C'est de la course que l'on reprend après une station, plus de la force utile."
-        image="/images/strength.jpg"
+        image="/images/strength.webp"
         alt="Travail de force pour l'entraînement HYROX"
       />
       <article className="container-page grid gap-8 py-14 md:grid-cols-2">

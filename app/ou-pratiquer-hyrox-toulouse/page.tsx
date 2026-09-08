@@ -2,14 +2,16 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { CtaBanner } from "@/components/CtaBanner";
 import { PageHero } from "@/components/PageHero";
+import { pageSeo } from "@/lib/seo";
 import { BOXING_CENTER_PHONE, BOXING_CENTER_PHONE_TEL, OFFICIAL_HYROX_URL, SALLES } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageSeo({
   title: "Où pratiquer le HYROX à Toulouse",
   description:
     "Où s'entraîner au HYROX à Toulouse : cours du Boxing Center, 5 salles, coachs, lien vers la page officielle.",
-  alternates: { canonical: "/ou-pratiquer-hyrox-toulouse" },
-};
+  path: "/ou-pratiquer-hyrox-toulouse",
+  image: "/images/toulouse.webp",
+});
 
 export default function Page() {
   return (
@@ -18,7 +20,7 @@ export default function Page() {
         kicker="Local"
         title="Où pratiquer à Toulouse ?"
         text="Le Boxing Center propose des cours HYROX mixtes, tous niveaux, avec une préparation inspirée de la boxe. Planning et inscriptions sur la page officielle."
-        image="/images/toulouse.jpg"
+        image="/images/toulouse.webp"
         alt="Capitole de Toulouse, ancrage local HYROX"
       />
       <section className="container-page py-14">

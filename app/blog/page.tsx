@@ -4,13 +4,15 @@ import Link from "next/link";
 import { CtaBanner } from "@/components/CtaBanner";
 import { PageHero } from "@/components/PageHero";
 import { articles } from "@/lib/articles";
+import { pageSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageSeo({
   title: "Blog HYROX",
   description:
     "Articles HYROX : premier race, guide débutant, différences avec le CrossFit, s'entraîner à Toulouse.",
-  alternates: { canonical: "/blog" },
-};
+  path: "/blog",
+  image: "/images/start-line.webp",
+});
 
 export default function Page() {
   return (
@@ -19,13 +21,20 @@ export default function Page() {
         kicker="Éditorial"
         title="Blog HYROX"
         text="Des articles utiles, pas du volume. Préparation, débutant, comparatifs et pratique locale."
-        image="/images/start-line.jpg"
+        image="/images/start-line.webp"
         alt="Course, communauté, contenus de blog"
       />
       <section className="container-page grid gap-8 py-14 md:grid-cols-2">
         {articles.map((article) => (
           <Link key={article.slug} href={`/blog/${article.slug}`} className="bg-white">
-            <Image src={article.image} alt={article.alt} width={800} height={480} className="h-52 w-full object-cover" />
+            <Image
+              src={article.image}
+              alt={article.alt}
+              width={800}
+              height={480}
+              className="h-52 w-full object-cover"
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
             <div className="p-5">
               <p className="text-xs font-bold uppercase tracking-wide text-brand">{article.date}</p>
               <h2 className="mt-2 text-2xl">{article.title}</h2>

@@ -1,6 +1,8 @@
 export const SITE_NAME = "HYROX Toulouse";
 export const SITE_TAGLINE = "Plus qu'un training, une communauté";
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://hyrox-ashen.vercel.app";
+export const SITE_DESCRIPTION =
+  "Guide HYROX Toulouse : comprendre la discipline, préparer les 8 épreuves, s'entraîner et trouver où pratiquer — sans jargon, avec un plan concret.";
 
 export const OFFICIAL_HYROX_URL =
   "https://boxingcenter.fr/activites-sportives-boxe-toulouse/hyrox-toulouse/";
@@ -28,7 +30,7 @@ export const STATIONS = [
 ] as const;
 
 export const NAV = [
-  { href: "/hyrox-toulouse", label: "Accueil" },
+  { href: "/", label: "Accueil" },
   { href: "/hyrox-c-est-quoi", label: "C'est quoi ?" },
   { href: "/epreuves-hyrox", label: "Épreuves" },
   { href: "/hyrox-debutant", label: "Débutant" },

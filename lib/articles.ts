@@ -15,7 +15,7 @@ export const articles: Article[] = [
     description:
       "Les bases pour arriver serein à sa première course : course à pied, stations, récupération et erreurs à éviter.",
     date: "2026-08-20",
-    image: "/images/start-line.jpg",
+    image: "/images/start-line.webp",
     alt: "Départ d'une course, préparation d'un premier HYROX",
     paragraphs: [
       "Un premier HYROX se prépare comme un effort hybride, pas comme un simple 10 km. Le format alterne 8 fois 1 km de course et 8 stations fonctionnelles. L'objectif n'est pas de tout écraser dès la première séance, mais d'arriver capable d'enchaîner sans explosion précoce.",
@@ -30,7 +30,7 @@ export const articles: Article[] = [
     description:
       "Niveau nécessaire, première séance, endurance, force et pièges classiques quand on débute le HYROX.",
     date: "2026-08-28",
-    image: "/images/coach.jpg",
+    image: "/images/coach.webp",
     alt: "Coach encadrant une séance pour débutants",
     paragraphs: [
       "Non, il ne faut pas être un athlète confirmé pour commencer le HYROX. Il faut pouvoir marcher, courir à son rythme et accepter de progresser. Les charges et les volumes s'adaptent ; le format, lui, reste le même.",
@@ -45,7 +45,7 @@ export const articles: Article[] = [
     description:
       "Deux disciplines fonctionnelles, deux logiques : format connu d'un côté, variété constante de l'autre.",
     date: "2026-09-02",
-    image: "/images/functional.jpg",
+    image: "/images/functional.webp",
     alt: "Entraînement fonctionnel intense en salle",
     paragraphs: [
       "Le HYROX est une course à format standardisé : 8 km de course et 8 stations identiques d'une épreuve à l'autre. On peut donc comparer les temps, viser un objectif clair et s'entraîner spécifiquement.",
@@ -60,7 +60,7 @@ export const articles: Article[] = [
     description:
       "Pistes pour préparer le HYROX à Toulouse et pourquoi le Boxing Center est un point d'entrée naturel.",
     date: "2026-09-05",
-    image: "/images/toulouse-capitole.jpg",
+    image: "/images/toulouse-capitole.webp",
     alt: "Place du Capitole à Toulouse",
     paragraphs: [
       "Toulouse compte plusieurs salles de sport fonctionnel. Pour le HYROX, cherchez trois choses : de la course (extérieur ou tapis), du matériel de stations (traîneau, rameur, wall balls) et un coaching qui gère l'enchaînement.",

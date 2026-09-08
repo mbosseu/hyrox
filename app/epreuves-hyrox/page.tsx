@@ -2,14 +2,16 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { CtaBanner } from "@/components/CtaBanner";
 import { PageHero } from "@/components/PageHero";
+import { pageSeo } from "@/lib/seo";
 import { STATIONS } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageSeo({
   title: "Les 8 épreuves HYROX",
   description:
     "Présentation des 8 stations HYROX : distances, muscles sollicités, conseils et erreurs fréquentes.",
-  alternates: { canonical: "/epreuves-hyrox" },
-};
+  path: "/epreuves-hyrox",
+  image: "/images/row.webp",
+});
 
 export default function Page() {
   return (
@@ -18,7 +20,7 @@ export default function Page() {
         kicker="Le format"
         title="Les 8 épreuves HYROX"
         text="Chaque kilomètre de course est suivi d'une station. Maîtriser les mouvements change plus un chrono que de simplement « pousser plus dur »."
-        image="/images/row.jpg"
+        image="/images/row.webp"
         alt="Force fonctionnelle, stations HYROX"
       />
       <section className="container-page py-14">
