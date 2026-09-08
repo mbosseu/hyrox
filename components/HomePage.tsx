@@ -146,8 +146,8 @@ export function HomePage() {
         </article>
         <article>
           <Image
-            src="/images/boxing.webp"
-            alt="Salle de sport à Toulouse pour le HYROX"
+            src="/images/wall-balls.webp"
+            alt="Athlètes en wall balls, entraînement HYROX à Toulouse"
             width={600}
             height={400}
             className="h-44 w-full object-cover"
@@ -166,7 +166,7 @@ export function HomePage() {
           <div>
             <h2 className="text-3xl sm:text-4xl">Boxing Center</h2>
             <p className="mt-4 text-white/80">
-              Club toulousain, 5 salles, coachs diplômés. Les cours HYROX mêlent le format de la discipline à une
+              Club toulousain, salles Saint-Cyprien et États-Unis, coachs diplômés. Les cours HYROX mêlent le format de la discipline à une
               préparation physique inspirée de la boxe. Inscriptions, planning et tarifs : uniquement sur la page
               officielle.
             </p>
@@ -179,10 +179,10 @@ export function HomePage() {
           </div>
           <Image
             src="/images/materiel.webp"
-            alt="Matériel de musculation et préparation physique HYROX"
+            alt="Séance d'entraînement au Boxing Center Toulouse"
             width={800}
-            height={520}
-            className="h-56 w-full object-cover sm:h-72"
+            height={554}
+            className="h-56 w-full object-cover object-center sm:h-72"
             sizes="(max-width: 768px) 100vw, 50vw"
           />
         </div>

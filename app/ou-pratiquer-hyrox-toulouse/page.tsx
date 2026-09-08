@@ -8,7 +8,7 @@ import { BOXING_CENTER_PHONE, BOXING_CENTER_PHONE_TEL, OFFICIAL_HYROX_URL, SALLE
 export const metadata: Metadata = pageSeo({
   title: "Où pratiquer le HYROX à Toulouse",
   description:
-    "Où s'entraîner au HYROX à Toulouse : cours du Boxing Center, 5 salles, coachs, lien vers la page officielle.",
+    "Où s'entraîner au HYROX à Toulouse : cours du Boxing Center, salles Saint-Cyprien et États-Unis, lien vers la page officielle.",
   path: "/ou-pratiquer-hyrox-toulouse",
   image: "/images/toulouse.webp",
 });
@@ -26,7 +26,7 @@ export default function Page() {
       <section className="container-page py-14">
         <p className="max-w-3xl text-neutral-800">
           Cherchez un lieu avec du cardio, de la force fonctionnelle et un encadrement. Le Boxing Center, club de sports
-          de combat et de préparation physique à Toulouse (5 salles), a conçu des séances HYROX accessibles aux
+          de combat et de préparation physique à Toulouse (Saint-Cyprien et États-Unis), a conçu des séances HYROX accessibles aux
           débutants comme aux confirmés. Les cours sont mixtes.
         </p>
         <p className="mt-4 max-w-3xl text-neutral-800">
@@ -34,7 +34,7 @@ export default function Page() {
           l&apos;esprit HYROX. Vérifiez toujours horaires, salles et tarifs sur le site officiel : ces informations
           évoluent.
         </p>
-        <h2 className="mt-10 text-3xl">Les 5 salles</h2>
+        <h2 className="mt-10 text-3xl">Les 2 salles</h2>
         <ul className="mt-4 grid gap-3 md:grid-cols-2">
           {SALLES.map((salle) => (
             <li key={salle.name} className="bg-white p-5">

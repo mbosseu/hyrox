@@ -7,15 +7,12 @@ export const SITE_DESCRIPTION =
 export const OFFICIAL_HYROX_URL =
   "https://boxingcenter.fr/activites-sportives-boxe-toulouse/hyrox-toulouse/";
 
-export const BOXING_CENTER_PHONE = "05 62 24 46 82";
-export const BOXING_CENTER_PHONE_TEL = "tel:+33562244682";
+export const BOXING_CENTER_PHONE = "09 39 03 67 48";
+export const BOXING_CENTER_PHONE_TEL = "tel:+33939036748";
 
 export const SALLES = [
   { name: "Toulouse Saint-Cyprien", focus: "Toutes disciplines" },
-  { name: "Toulouse Minimes", focus: "Boxe anglaise" },
   { name: "Toulouse États-Unis", focus: "Plus grande salle, toutes disciplines" },
-  { name: "Ramonville", focus: "Boxe anglaise & éducative" },
-  { name: "Portet-sur-Garonne", focus: "Boxe & cross training" },
 ] as const;
 
 export const STATIONS = [

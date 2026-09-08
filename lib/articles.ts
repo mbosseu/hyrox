@@ -64,7 +64,7 @@ export const articles: Article[] = [
     alt: "Place du Capitole à Toulouse",
     paragraphs: [
       "Toulouse compte plusieurs salles de sport fonctionnel. Pour le HYROX, cherchez trois choses : de la course (extérieur ou tapis), du matériel de stations (traîneau, rameur, wall balls) et un coaching qui gère l'enchaînement.",
-      "Le Boxing Center dispose de 5 salles en agglomération toulousaine : Saint-Cyprien, Minimes, États-Unis, Ramonville et Portet-sur-Garonne. Les cours HYROX y sont conçus pour tous les niveaux, hommes et femmes, avec des coachs diplômés.",
+      "Le Boxing Center dispose de 2 salles à Toulouse pour le HYROX : Saint-Cyprien et États-Unis. Les cours y sont conçus pour tous les niveaux, hommes et femmes, avec des coachs diplômés.",
       "La particularité du club : une fusion avec des éléments de préparation physique issus de la boxe (fractionné au sac, shadow, corde à sauter). Ce n'est pas un substitut aux 8 stations officielles, mais un complément cardio et mental très utile.",
       "Horaires, tarifs et inscriptions évoluent : la page officielle HYROX du Boxing Center reste la source à jour. Utilisez ce guide pour comprendre la discipline, puis allez vérifier le planning sur le site du club.",
     ],
